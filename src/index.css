@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background-color: #f5f3f0;
+}
+
+::selection {
+  background-color: #1a1a1a;
+  color: #f5f3f0;
+}
+
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1.5px solid #1a1a1a;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: transparent;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #d0cdc8;
+  margin: 10px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  padding: 10px 16px;
+  border: 1px solid #1a1a1a;
+  font-size: 14px;
+  text-align: left;
+}
+
+table th {
+  background-color: #1a1a1a;
+  color: #f5f3f0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-family: 'Space Mono', monospace;
+}
+
+code, pre {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  background-color: #1a1a1a;
+  color: #e8e6e2;
+  border: none;
+}
+
+pre {
+  padding: 16px 20px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-shadow: 6px 6px 0px #c8c4be;
+}
+
+code {
+  padding: 2px 6px;
+}
+
+/* Hero Background */
+.hero-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+}
+
+.hero-bg-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, #f5f3f0 100%);
+}
+
+/* Layout */
+.site-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+/* Header */
+.site-header {
+  padding: 48px 0 32px;
+  margin-bottom: 0;
+  border-bottom: none;
+  position: relative;
+}
+
+.site-header h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.site-header .subtitle {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 20px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.site-header .department {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+.header-rule {
+  height: 4px;
+  background-color: #1a1a1a;
+  margin: 0;
+  border: none;
+}
+
+/* Navigation */
+.site-nav {
+  background-color: #1a1a1a;
+  padding: 14px 20px;
+  margin-bottom: 36px;
+  display: flex;
+  gap: 0;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.site-nav a {
+  color: #f5f3f0;
+  border-bottom: 1.5px solid transparent;
+  padding: 2px 0;
+  margin-right: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.site-nav a:hover {
+  border-bottom-color: #f5f3f0;
+}
+
+.site-nav .active-link {
+  color: #f5f3f0;
+  border-bottom: 1.5px solid #f5f3f0;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.site-nav .separator {
+  color: #555;
+  margin-right: 8px;
+  user-select: none;
+}
+
+/* Main Content */
+.main-content {
+  min-height: 400px;
+  margin-bottom: 40px;
+}
+
+.main-content h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.main-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 24px;
+}
+
+.main-content p {
+  margin-bottom: 14px;
+}
+
+.main-content ul, .main-content ol {
+  margin-left: 20px;
+  margin-bottom: 14px;
+}
+
+.main-content li {
+  margin-bottom: 6px;
+}
+
+/* Info Box */
+.info-box {
+  border: 2px solid #1a1a1a;
+  background-color: #fff;
+  padding: 20px 24px;
+  margin: 20px 0;
+  font-size: 14px;
+  box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+.info-box .label {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+}
+
+/* Notice Box */
+.notice-box {
+  border: 2px solid #1a1a1a;
+  border-left: 6px solid #c0392b;
+  background-color: #fff;
+  padding: 20px 24px;
+  margin: 20px 0;
+  font-size: 14px;
+  box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 4px solid #1a1a1a;
+  padding-top: 20px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: #888;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
+/* License text */
+.license-text {
+  font-size: 13px;
+  line-height: 1.6;
+  max-height: 500px;
+  overflow-y: auto;
+  border: 2px solid #1a1a1a;
+  padding: 20px;
+  background-color: #fff;
+  margin: 16px 0;
+  box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+/* Citation block */
+.citation-block {
+  border: 2px solid #1a1a1a;
+  background-color: #fff;
+  padding: 20px 24px;
+  margin: 16px 0;
+  font-size: 14px;
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: 16px;
+  line-height: 1.7;
+  box-shadow: 5px 5px 0px #1a1a1a;
+}
+
+/* Section divider */
+.section-divider {
+  border-top: 1px solid #d0cdc8;
+  margin: 28px 0;
+}
+
+/* Last updated text */
+.last-updated {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 24px;
+}
+
+/* Tag/badge style for version etc */
+.tag {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  background-color: #1a1a1a;
+  color: #f5f3f0;
+  padding: 3px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
