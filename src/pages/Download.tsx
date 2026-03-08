@@ -1,5 +1,7 @@
 import AcademicLayout from "@/components/AcademicLayout";
 
+const RELEASE_BASE = "https://github.com/nitheeshx86/StanleyDownload/releases/download/v1.0.0";
+
 const Download = () => (
   <AcademicLayout>
     <h2>Download LithoMap</h2>
@@ -28,13 +30,27 @@ const Download = () => (
           <td>Windows (64-bit)</td>
           <td>LithoMap-1.0.0-setup.exe</td>
           <td>48.2 MB</td>
-          <td><a href="#">Download</a></td>
+          <td>
+            <a
+              href={`${RELEASE_BASE}/LithoMap-1.0.0-setup.exe`}
+              download
+            >
+              Download
+            </a>
+          </td>
         </tr>
         <tr>
           <td>macOS (Intel/Apple Silicon)</td>
           <td>LithoMap-1.0.0.dmg</td>
           <td>52.7 MB</td>
-          <td><a href="#">Download</a></td>
+          <td>
+            <a
+              href={`${RELEASE_BASE}/LithoMap-1.0.0.dmg`}
+              download
+            >
+              Download
+            </a>
+          </td>
         </tr>
       </tbody>
     </table>
