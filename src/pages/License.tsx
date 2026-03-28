@@ -97,7 +97,7 @@ const License = () => (
     </div>
 
     <p className="last-updated">
-      Last updated: 15 February 2026
+      Last updated: 28 March 2026
     </p>
   </AcademicLayout>
 );

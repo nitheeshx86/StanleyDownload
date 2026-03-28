@@ -12,23 +12,17 @@ const Citation = () => (
 
     <h3>APA Format</h3>
     <div className="citation-block">
-      Nitheesh, K. (2026). LithoMap: A computational tool for FTIR-based spatial mineral
-      mapping of renal calculi. <em>Journal of Urological Research</em>, 00(0), 000–000.
-      https://doi.org/10.xxxx/xxxxx
+      Nitheesh K., Surya S., Pranav Krishna J., Pravin, S. C., Roopavathy, J. R., &amp; Saravanan, M. P. (2026). 
+      LithoMap: A 3D Spatial Encoding Framework for FTIR-Based Gallstone Analysis. 
+      <em>IEEE Conference</em>.
     </div>
 
     <h3>BibTeX</h3>
-    <pre>{`@article{nitheesh2026lithomap,
-  title     = {LithoMap: A Computational Tool for FTIR-Based
-               Spatial Mineral Mapping of Renal Calculi},
-  author    = {Nitheesh, K.},
-  journal   = {Journal of Urological Research},
-  volume    = {00},
-  number    = {0},
-  pages     = {000--000},
-  year      = {2026},
-  doi       = {10.xxxx/xxxxx},
-  publisher = {}
+    <pre>{`@inproceedings{nitheesh2026lithomap,
+  title     = {LithoMap: A 3D Spatial Encoding Framework for FTIR-Based Gallstone Analysis},
+  author    = {Nitheesh, K. and Surya, S. and Pranav Krishna, J. and Pravin, Sheena Christabel and Roopavathy, J. Rathi and Saravanan, M.P.},
+  booktitle = {IEEE Conference},
+  year      = {2026}
 }`}</pre>
 
     <div className="section-divider" />
@@ -64,7 +58,7 @@ const Citation = () => (
     </ul>
 
     <p className="last-updated">
-      Last updated: 15 February 2026
+      Last updated: 28 March 2026
     </p>
   </AcademicLayout>
 );

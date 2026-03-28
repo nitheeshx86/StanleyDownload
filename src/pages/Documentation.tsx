@@ -19,75 +19,36 @@ const Documentation = () => (
 
     <h3>2. Input Data Format</h3>
     <p>
-      LithoMap accepts FTIR spectral data in the following formats:
-    </p>
-    <ul>
-      <li><strong>CSV:</strong> Comma-separated values with wavenumber in the first column and absorbance/transmittance values in subsequent columns. Each column represents a spatial measurement point.</li>
-      <li><strong>JCAMP-DX:</strong> Standard spectroscopic data exchange format (IUPAC).</li>
-    </ul>
-    <p>
-      Spatial coordinate metadata should be provided in an accompanying index file (CSV format)
-      specifying X and Y grid positions for each measurement point.
+      LithoMap operates as a conversion framework. The mineral types and their respective percentages, as derived from bulk Fourier-Transform Infrared Spectroscopy (FTIR) results, are manually entered into the program. LithoMap does not alter any raw signals from the FTIR, but merely converts the entered composition data into a structural framework, which is three-dimensional in nature.
     </p>
 
     <h3>3. Workflow</h3>
     <ol>
-      <li>Load spectral dataset via <em>File &gt; Open Dataset</em></li>
-      <li>Load spatial index file via <em>File &gt; Load Spatial Index</em></li>
-      <li>Select mineral reference library (default library included)</li>
-      <li>Run phase identification: <em>Analysis &gt; Identify Phases</em></li>
-      <li>Generate spatial map: <em>Analysis &gt; Generate Map</em></li>
-      <li>Export results: <em>File &gt; Export Map</em> or <em>File &gt; Export Table</em></li>
+      <li>Patient demographic and clinical data are input through the Patient Info interface.</li>
+      <li>Mineral composition data, calculated from the FTIR data, are incorporated into the workflow.</li>
+      <li>The required number of concentric layers is defined.</li>
+      <li>Surfaces are enabled, where applicable, for compositional mapping.</li>
+      <li>Compositional points are placed within the defined layers.</li>
+      <li>Compositional components and corresponding percentage values are assigned to the points.</li>
+      <li>Points are moved along the depth axis within the normalized range of -1 to +1.</li>
+      <li>The Section View tool is used to review the internal data and spatial placement.</li>
+      <li>Saving, exporting, and/or creating a PDF report are accomplished.</li>
     </ol>
 
-    <h3>4. Mineral Phase Identification</h3>
+    <h3>4. Composition Library</h3>
     <p>
-      Phase identification is performed by spectral matching against a reference library of
-      known mineral FTIR spectra. The software computes a correlation coefficient between the
-      input spectrum at each spatial point and each reference spectrum. A threshold value
-      (default: 0.85) determines the minimum acceptable match quality. Points below the
-      threshold are classified as "unidentified."
+      In each layer, specific points are assigned mineral composition elements from a pre-defined library. This library includes calcium oxalate monohydrate (COM), calcium oxalate dihydrate (COD), uric acid (UA), struvite (STR), carbonate apatite (CAP), brushite (BRU), cystine, and additional user-specified minerals. Each point can have one or several mineral composition elements with defined percentage weightings.
     </p>
 
     <h3>5. Output Formats</h3>
     <ul>
-      <li><strong>Map Image:</strong> PNG or TIFF format, colour-coded by identified mineral phase</li>
-      <li><strong>Composition Table:</strong> CSV file listing spatial coordinates, identified phase, and match score for each measurement point</li>
-      <li><strong>Summary Report:</strong> Plain text summary of overall composition percentages</li>
+      <li><strong>Interactive 3D Model:</strong> A spatial rendering indexing compositional points by structural depth and layer.</li>
+      <li><strong>Comprehensive Clinical Report (PDF):</strong> A robust clinical record containing a three-dimensional visualization, annotated compositional plots, mineral percentages, and relevant visual summaries integrated with patient metadata.</li>
+      <li><strong>Exportable Spatial Dataset:</strong> A structured archival format that saves the geometric model, point-specific annotations, and depth coordinates for future computational modeling and integration.</li>
     </ul>
 
-    <div className="section-divider" />
-
-    <h3>6. Troubleshooting</h3>
-    <table style={{ width: "100%", marginTop: 8 }}>
-      <thead>
-        <tr>
-          <th>Issue</th>
-          <th>Possible Cause</th>
-          <th>Resolution</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>No phases identified</td>
-          <td>Correlation threshold too high</td>
-          <td>Lower threshold in Settings &gt; Analysis Parameters</td>
-        </tr>
-        <tr>
-          <td>Map appears blank</td>
-          <td>Spatial index not loaded</td>
-          <td>Ensure index file is loaded before generating map</td>
-        </tr>
-        <tr>
-          <td>Import error on CSV</td>
-          <td>Incorrect delimiter or encoding</td>
-          <td>Verify CSV uses UTF-8 encoding and comma delimiters</td>
-        </tr>
-      </tbody>
-    </table>
-
     <p className="last-updated" style={{ marginTop: 16 }}>
-      Documentation version: 1.0 — Last updated: 15 February 2026
+      Documentation version: 1.0 — Last updated: 28 March 2026
     </p>
   </AcademicLayout>
 );

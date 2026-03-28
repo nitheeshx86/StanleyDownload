@@ -17,6 +17,10 @@ const Contact = () => (
           <td>Nitheesh K</td>
         </tr>
         <tr>
+          <td><strong>Email</strong></td>
+          <td><a href="mailto:knitheesh0360@gmail.com">knitheesh0360@gmail.com</a></td>
+        </tr>
+        <tr>
           <td><strong>Developed For</strong></td>
           <td>Dept. of Biochemistry, Govt. Stanley Medical College</td>
         </tr>
@@ -43,7 +47,7 @@ const Contact = () => (
     </ul>
 
     <p className="last-updated">
-      Last updated: 15 February 2026
+      Last updated: 28 March 2026
     </p>
   </AcademicLayout>
 );

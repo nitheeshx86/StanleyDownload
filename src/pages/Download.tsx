@@ -27,24 +27,24 @@ const Download = () => (
         <tr>
           <td>Windows (64-bit)</td>
           <td>LithoMap-1.0.0-setup.exe</td>
-          <td>48.2 MB</td>
-          <td><a href="#">Download</a></td>
+          <td>121 MB</td>
+          <td><a href="https://github.com/nitheeshx86/StanleyDownload/releases/download/v1.0.0/LithoMap-1.0.0-setup.exe" className="download-btn">Download</a></td>
         </tr>
         <tr>
           <td>macOS (Intel/Apple Silicon)</td>
           <td>LithoMap-1.0.0.dmg</td>
-          <td>52.7 MB</td>
-          <td><a href="#">Download</a></td>
+          <td>151 MB</td>
+          <td><a href="https://github.com/nitheeshx86/StanleyDownload/releases/download/v1.0.0/LithoMap-1.0.0.dmg" className="download-btn">Download</a></td>
         </tr>
       </tbody>
     </table>
 
     <h3>SHA256 Checksums</h3>
     <pre>{`LithoMap-1.0.0-setup.exe:
-  a3f7c9d2e8b14f6a0c5d7e9f1b3a5c7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7a9
+  30d8228a139e0534fb751d48004beefb03ba4601804cef62edfbce6387053f70
 
 LithoMap-1.0.0.dmg:
-  b4e8d1f3a5c7b9d1e3f5a7c9b1d3e5f7a9c1b3d5e7f9a1c3b5d7e9f1a3c5b7d9`}</pre>
+  6b8ce0774fa1aa9f60dd3b8af29229f3d95ebe6bd93ee4a00ae31cdcdc1fb875`}</pre>
 
     <div className="section-divider" />
 
@@ -60,15 +60,15 @@ LithoMap-1.0.0.dmg:
 
     <h3>Release Notes</h3>
     <ul>
-      <li>Initial public release</li>
-      <li>Support for standard FTIR spectral data formats (CSV, JCAMP-DX)</li>
-      <li>Seven mineral phase identification algorithms</li>
-      <li>PNG and TIFF map export</li>
-      <li>Tabular composition summary export (CSV)</li>
+      <li>Initial public release of the LithoMap 3D spatial encoding framework</li>
+      <li>Support for custom multi-layer concentric structural definition</li>
+      <li>Elevation and depth tuning for precise point-specific composition mapping</li>
+      <li>Interactive Section View tool for internal core and interface analysis</li>
+      <li>Automated clinical PDF report generation integrated with patient metadata</li>
     </ul>
 
     <p className="last-updated">
-      Last updated: 15 February 2026
+      Last updated: 28 March 2026
     </p>
   </AcademicLayout>
 );

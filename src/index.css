@@ -325,3 +325,25 @@ code {
   text-transform: uppercase;
   margin-right: 6px;
 }
+
+/* Download Button */
+a.download-btn {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 11px;
+  background-color: #1a1a1a;
+  color: #f5f3f0;
+  padding: 6px 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid #1a1a1a;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+a.download-btn:hover {
+  background-color: #f5f3f0;
+  color: #1a1a1a;
+  border-bottom-color: #1a1a1a;
+}

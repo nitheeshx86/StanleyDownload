@@ -4,15 +4,10 @@ const Index = () => (
   <AcademicLayout>
     <h2>About LithoMap</h2>
     <p>
-      <strong>LithoMap</strong> is a computational tool for the spatial mapping and compositional analysis
-      of renal calculi (kidney stones). The software enables researchers and clinicians to generate
-      two-dimensional mineral distribution maps from Fourier Transform Infrared (FTIR) spectroscopic
-      data acquired across sectioned calculus specimens.
+      <strong>LithoMap</strong> is a three-dimensional spatial mapping tool that provides a framework for converting compositional information into a coherent geometric form of Renal and Biliary Calculi. While Fourier Transform Infrared Spectroscopy (FTIR) accurately determines mineral composition, it lacks information about the spatial arrangement of these minerals. LithoMap addresses this by adding structural context to chemical data.
     </p>
     <p>
-      The system provides automated identification and localisation of crystalline and amorphous
-      phases within heterogeneous stone matrices, facilitating the study of mineral zonation patterns,
-      nucleation sites, and compositional gradients.
+      Our tool provides functionality for defining layers of calculi composition, mapping minerals from a predefined set to loci within calculi, adjusting positions of minerals, and visualizing sections of calculi, ultimately including relevant clinical information in a well-organized and unified archival form.
     </p>
 
     <div className="section-divider" />
@@ -26,11 +21,11 @@ const Index = () => (
 
     <h3>Key Capabilities</h3>
     <ul>
-      <li>FTIR-based spatial mineral phase mapping of sectioned renal calculi</li>
-      <li>Identification of COM, COD, hydroxyapatite, brushite, uric acid, struvite, and cystine</li>
-      <li>Visualisation of compositional zonation and layering patterns</li>
-      <li>Export of mapped data in standard image and tabular formats</li>
-      <li>Batch processing of multiple specimen datasets</li>
+      <li>FTIR-based spatial encoding across multiple three-dimensional concentric layers</li>
+      <li>Identification of COM, COD, UA, STR, CAP, BRU, and cystine with depth indexing</li>
+      <li>Interactive Section View tool for internal slicing and analysis</li>
+      <li>Patient metadata and clinical case tracking integration</li>
+      <li>Export of structured clinical reports (PDF) incorporating geometry and chemistry</li>
     </ul>
 
     <div className="section-divider" />
@@ -44,7 +39,7 @@ const Index = () => (
     </div>
 
     <p className="last-updated">
-      Last updated: 15 February 2026
+      Last updated: 28 March 2026
     </p>
   </AcademicLayout>
 );

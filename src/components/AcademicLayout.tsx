@@ -47,6 +47,10 @@ const AcademicLayout = ({ children }: { children: React.ReactNode }) => {
               )}
             </span>
           ))}
+          <span className="separator">/</span>
+          <span>
+            <a href="https://github.com/nitheeshx86/StanleyProduction.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </span>
         </nav>
 
         <div className="main-content">{children}</div>
